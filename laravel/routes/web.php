@@ -258,3 +258,5 @@ Route::middleware(['auth','verified'])->group(function (){
 Route::get('/admin',function (){
     echo "Hello admin....";
 })->middleware('isAdmin:مدیر');
+
+//یک تغیر ایجاد شد
