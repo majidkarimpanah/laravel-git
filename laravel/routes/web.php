@@ -260,3 +260,11 @@ Route::get('/admin',function (){
 })->middleware('isAdmin:مدیر');
 
 //یک تغیر ایجاد شد
+
+Route::prefix('fa')->group(function (){
+    \Illuminate\Support\Facades\App::setLocale('fa');
+    Route::get('message',function (){
+        return view('message');
+    });
+});
+
